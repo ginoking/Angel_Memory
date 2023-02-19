@@ -1,0 +1,191 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #daa0a1;
+}
+
+.calendar {
+    width: 750px;
+    background-color: #203139;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.title a {
+    text-decoration: none;
+}
+
+.title .text {
+    margin: 0 50px;
+}
+
+.title .text h1 {
+    margin: 5px;
+}
+
+.title .text h3 {
+    margin: 5px;
+}
+.body-list {
+    display: flex;
+    justify-content: center;
+}
+
+.body-list ul {
+    padding-left: 0;
+    width: 80%;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.body-list ul li {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 14.28%;
+    height: 55px;
+    line-height: 36px;
+    font-size: 15px;
+    list-style-type: none;
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+}
+
+.lightgrey {
+    color: #a8a8a8;
+}
+
+.darkgrey {
+    color: #255d6e;
+}
+
+.green {
+    color: #e3e3e3;
+}
+
+.greenbox {
+    border: 1px solid #203139;
+    background: #e9f8df;
+}
+
+.event {
+    color: #daa0a1;
+    border: 0;
+    background-color: transparent;
+    background-image: url('images/heart.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #e3e3e3;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 60%;
+    animation-name: modalopen;
+    animation-duration: 0.5s;
+}
+
+@media screen {
+    .modal-content {
+        max-height: 80vh;
+        margin: 5% auto;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        width: 80%;
+        margin: 25% auto;
+    }
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes modalclose {
+    from {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+.modal.show {
+    display: block;
+}
+
+.modal.hide {
+    animation-name: modalclose;
+    animation-duration: 10s;
+    display: none;
+}
+
+.modal .image {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.modal .image img {
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.modal-content h1,p,span {
+    color: #203139;
+}

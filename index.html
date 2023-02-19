@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>{{.Title}}</title>
+</head>
+<body>
+    <div class="calendar">
+        <div class="title">
+            <a href="" id="prev" class="green"><</a>
+            <div class="text">
+                <h1 class="green" id="calendar-title">Month</h1>
+                <h3 class="green small" id="calendar-year">Year</h3>
+            </div>
+            <a href="" id="next" class="green">></a>
+        </div>
+        <div class="body">
+            <div class="green body-list">
+                <ul>
+                    <li>MON</li>
+                    <li>TUE</li>
+                    <li>WED</li>
+                    <li>THU</li>
+                    <li>FRI</li>
+                    <li>SAT</li>
+                    <li>SUN</li>
+                </ul>
+            </div>
+            <div class="darkgrey body-list">
+                <ul id="days"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1></h1>
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <p>This is the modal content!</p>
+        </div>
+    </div>
+    <script src="./calendar.js"></script>
+</body>
+</html>
