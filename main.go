@@ -14,8 +14,7 @@ type IndexData struct {
 func request(w http.ResponseWriter, r *http.Request) {
 	tmpl := template.Must(template.ParseFiles("./index.html"))
 	data := new(IndexData)
-	data.Title = "首頁"
-	data.Content = "我的第一個go 網頁"
+	data.Title = "天使與國王的回憶錄"
 	tmpl.Execute(w, data)
 	// w.WriteHeader(200)
 	// w.Write([]byte(html))
