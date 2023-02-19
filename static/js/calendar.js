@@ -13,17 +13,24 @@ let my_day = my_date.getDate();
 const modal = document.getElementById("myModal");
 const span = document.getElementsByClassName("close")[0];
 
-span.onclick = function () {
+span.addEventListener('click', () => {
 	modal.classList.remove("show");
 	modal.classList.add("hide");
-}
+});
 
-window.onclick = function (event) {
+window.addEventListener('click', (event) => {
 	if (event.target == modal) {
 		modal.classList.remove("show");
 		modal.classList.add("hide");
 	}
-}
+});
+
+modal.addEventListener('click', (event) => {
+	if (event.target == modal) {
+		modal.classList.remove("show");
+		modal.classList.add("hide");
+	}
+})
 
 function dayStart(month, year) {
 	return new Date(year, month, 1).getDay();
