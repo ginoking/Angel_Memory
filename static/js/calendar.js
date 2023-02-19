@@ -38,7 +38,7 @@ function refreshDate() {
 		'2022-1-23': {
 			'name': '新竹海邊遊',
 			'des': '我們一起去海邊走走逛逛，雖然最後飄雨，但是心暖暖的',
-			'image': 'images/IMG_6242.jpg'
+			'image': '../static/images/IMG_6242.jpg'
 		},
 		'2022-2-5': {
 			'name': '司馬庫斯櫻花行',
