@@ -132,19 +132,6 @@ body > .title {
     }
 }
 
-@media (max-width: 600px) {
-    .calendar {
-        width: 95%;
-    }
-    .modal-content {
-        width: 80%;
-        margin: 25% auto;
-    }
-    .body-list ul li {
-        height: 55px;
-    }
-}
-
 .close {
     position: absolute;
     top: 0;
@@ -203,5 +190,27 @@ body > .title {
 }
 
 .modal-content h1,p,span {
+    font-family: Arial, Helvetica, sans-serif;
     color: #203139;
+}
+
+.modal-content h1 {
+    letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+    .calendar {
+        width: 95%;
+    }
+    .modal-content {
+        width: 80%;
+        margin: 25% auto;
+    }
+    .body-list ul li {
+        height: 55px;
+    }
+
+    .modal .image {
+        width: 80%;
+    }
 }
