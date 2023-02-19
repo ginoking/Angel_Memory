@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #daa0a1;
+    font-family: 'Shantell Sans', cursive;
 }
 
 body > .title {
     letter-spacing: 5px;
     color: #255d6e;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .calendar {
@@ -49,7 +52,7 @@ body > .title {
 .body-list ul {
     padding-left: 0;
     width: 80%;
-    font-family: Arial;
+    font-family: 'Shantell Sans', cursive;
     font-weight: bold;
     font-size: 14px;
 }

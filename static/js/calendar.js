@@ -1,5 +1,3 @@
-const month_olympic = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-const month_normal = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 const month_name = ["January", "Febrary", "March", "April", "May", "June", "July", "Auguest", "September", "October", "November", "December"];
 
 const prev = document.getElementById("prev");
