@@ -214,3 +214,13 @@ body > .title {
         width: 80%;
     }
 }
+
+@media (min-width: 1200px) {
+    .body-list ul li {
+       background-size: 50%;
+    }
+
+    .modal .image {
+       max-width: 25%;
+    }
+}
