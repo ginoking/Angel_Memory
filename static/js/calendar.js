@@ -194,6 +194,7 @@ function refreshDate() {
 				modal.querySelector('h1').innerHTML = event.name
 				modal.querySelector('p').innerHTML = event.des
 				modal.querySelector('img').src = event.image
+				modal.querySelector('.modal-date').innerHTML = `${my_year}/${my_month + 1}/${i}`
 				modal.classList.remove("hide");
 				modal.classList.add("show");
 			})
