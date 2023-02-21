@@ -127,6 +127,10 @@ body > .title {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+.modal-date {
+    font-family: 'Caveat', cursive;
+}
+
 .modal-content {
     position: relative;
     background-color: #e3e3e3;
